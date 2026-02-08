@@ -15,6 +15,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Costura.Fody" Version="5.7.0">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
     <PackageReference Include="Xarial.XCad" Version="0.7.5" />
     <PackageReference Include="Xarial.XCad.SolidWorks" Version="0.7.5" />
     <PackageReference Include="Xarial.XCad.Toolkit" Version="0.7.5" />
@@ -35,6 +38,14 @@
     </PropertyGroup>
   </Target>
 
+  <!-- Interopy muszą być w folderze addinu — SolidWorks ładuje DLL zanim AssemblyResolve zdąży się zarejestrować -->
+
+  <!-- Zbuduj i skopiuj RegisterAddin.exe — rejestracja addinu bez kopiowania interopów -->
+  <Target Name="BuildAndCopyRegisterTool" AfterTargets="Build">
+    <MSBuild Projects="$(MSBuildProjectDirectory)\RegisterAddin\RegisterAddin.csproj" Targets="Restore;Build" Properties="Configuration=$(Configuration);Platform=AnyCPU" />
+    <Copy SourceFiles="$(MSBuildProjectDirectory)\RegisterAddin\bin\$(Configuration)\net472\RegisterAddin.exe" DestinationFiles="$(OutputPath)RegisterAddin.exe" />
+  </Target>
+
   <Target Name="DisableXCadTargets" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <EnableXCadRegistration>false</EnableXCadRegistration>
@@ -42,11 +53,9 @@
     </PropertyGroup>
   </Target>
 
-
   <ItemGroup>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-    <Reference Include="System.Drawing" />
     <Reference Include="System.Xaml" />
     <Reference Include="WindowsBase" />
   </ItemGroup>
@@ -76,6 +85,7 @@
 
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Core\SolidWorksInteropLoader.cs" />
     <Compile Include="Core\SwAddin.cs" />
     <Compile Include="Resources\Resources.cs" />
     <Compile Include="Views\ExportTaskPaneControl.xaml.cs">

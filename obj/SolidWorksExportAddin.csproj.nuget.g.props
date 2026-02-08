@@ -13,6 +13,9 @@
     <SourceRoot Include="C:\Users\t0681\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)costura.fody\5.7.0\build\Costura.Fody.props" Condition="Exists('$(NuGetPackageRoot)costura.fody\5.7.0\build\Costura.Fody.props')" />
+  </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgXarial_XCad_SolidWorks_Interops Condition=" '$(PkgXarial_XCad_SolidWorks_Interops)' == '' ">C:\Users\t0681\.nuget\packages\xarial.xcad.solidworks.interops\0.3.0</PkgXarial_XCad_SolidWorks_Interops>
     <PkgXarial_XCad_SolidWorks Condition=" '$(PkgXarial_XCad_SolidWorks)' == '' ">C:\Users\t0681\.nuget\packages\xarial.xcad.solidworks\0.7.5</PkgXarial_XCad_SolidWorks>

@@ -1,0 +1,11 @@
+E:\Projects\Solidworks panel\RegisterAddin\bin\Release\net472\RegisterAddin.exe.config
+E:\Projects\Solidworks panel\RegisterAddin\bin\Release\net472\RegisterAddin.exe
+E:\Projects\Solidworks panel\RegisterAddin\bin\Release\net472\RegisterAddin.pdb
+E:\Projects\Solidworks panel\RegisterAddin\obj\Release\net472\RegisterAddin.csproj.AssemblyReference.cache
+E:\Projects\Solidworks panel\RegisterAddin\obj\Release\net472\RegisterAddin.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\Solidworks panel\RegisterAddin\obj\Release\net472\RegisterAddin.AssemblyInfoInputs.cache
+E:\Projects\Solidworks panel\RegisterAddin\obj\Release\net472\RegisterAddin.AssemblyInfo.cs
+E:\Projects\Solidworks panel\RegisterAddin\obj\Release\net472\RegisterAddin.csproj.CoreCompileInputs.cache
+E:\Projects\Solidworks panel\RegisterAddin\obj\Release\net472\RegisterAddin.exe
+E:\Projects\Solidworks panel\RegisterAddin\obj\Release\net472\RegisterAddin.pdb
+E:\Projects\Solidworks panel\RegisterAddin\obj\Release\net472\RegisterAddin.exe.config

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Weavers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="FodyWeavers.xsd">
+  <Costura DisableCleanup="true">
+    <!-- Nie usuwać Xarial.*.dll z output — potrzebne dla RegAsm i ładowania addinu -->
+    <!-- Nie osadzaj interopów SolidWorks — muszą zostać jako osobne pliki -->
+    <ExcludeAssemblies>
+      SolidWorks.Interop.sldworks
+      SolidWorks.Interop.swconst
+      SolidWorks.Interop.swpublished
+    </ExcludeAssemblies>
+  </Costura>
+</Weavers>
