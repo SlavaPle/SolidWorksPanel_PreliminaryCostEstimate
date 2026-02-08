@@ -57,11 +57,11 @@
             },
             "Xarial.XCad": {
               "target": "Package",
-              "version": "[0.7.5, )"
+              "version": "[0.8.2, )"
             },
             "Xarial.XCad.SolidWorks": {
               "target": "Package",
-              "version": "[0.7.5, )"
+              "version": "[0.8.2, )"
             },
             "Xarial.XCad.SolidWorks.Interops": {
               "target": "Package",
@@ -69,7 +69,7 @@
             },
             "Xarial.XCad.Toolkit": {
               "target": "Package",
-              "version": "[0.7.5, )"
+              "version": "[0.8.2, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"

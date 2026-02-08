@@ -18,6 +18,6 @@
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgXarial_XCad_SolidWorks_Interops Condition=" '$(PkgXarial_XCad_SolidWorks_Interops)' == '' ">C:\Users\t0681\.nuget\packages\xarial.xcad.solidworks.interops\0.3.0</PkgXarial_XCad_SolidWorks_Interops>
-    <PkgXarial_XCad_SolidWorks Condition=" '$(PkgXarial_XCad_SolidWorks)' == '' ">C:\Users\t0681\.nuget\packages\xarial.xcad.solidworks\0.7.5</PkgXarial_XCad_SolidWorks>
+    <PkgXarial_XCad_SolidWorks Condition=" '$(PkgXarial_XCad_SolidWorks)' == '' ">C:\Users\t0681\.nuget\packages\xarial.xcad.solidworks\0.8.2</PkgXarial_XCad_SolidWorks>
   </PropertyGroup>
 </Project>

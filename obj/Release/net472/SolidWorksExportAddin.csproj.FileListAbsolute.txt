@@ -21,3 +21,4 @@ E:\Projects\Solidworks panel\obj\Release\net472\SolidWorksExportAddin.csproj.Fod
 E:\Projects\Solidworks panel\obj\Release\net472\SolidWor.796CC734.Up2Date
 E:\Projects\Solidworks panel\obj\Release\net472\SolidWorksExportAddin.dll
 E:\Projects\Solidworks panel\obj\Release\net472\SolidWorksExportAddin.pdb
+E:\Projects\Solidworks panel\obj\Release\net472\SolidWorksExportAddin.sourcelink.json

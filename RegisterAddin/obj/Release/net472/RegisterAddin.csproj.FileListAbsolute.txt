@@ -9,3 +9,4 @@ E:\Projects\Solidworks panel\RegisterAddin\obj\Release\net472\RegisterAddin.cspr
 E:\Projects\Solidworks panel\RegisterAddin\obj\Release\net472\RegisterAddin.exe
 E:\Projects\Solidworks panel\RegisterAddin\obj\Release\net472\RegisterAddin.pdb
 E:\Projects\Solidworks panel\RegisterAddin\obj\Release\net472\RegisterAddin.exe.config
+E:\Projects\Solidworks panel\RegisterAddin\obj\Release\net472\RegisterAddin.sourcelink.json

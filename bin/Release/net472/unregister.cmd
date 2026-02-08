@@ -1,2 +1,3 @@
-"%~dp0RegisterAddin.exe" /u
+@echo off
+"%SystemRoot%\Microsoft.NET\Framework64\v4.0.30319\RegAsm.exe" /unregister "%~dp0SolidWorksExportAddin.dll"
 pause

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RegisterAddin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d13da82e4dfc32c8ba96f783dc649d437dc32cd5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fc428aefbf8fc4ebfcf3286f6396e2ca567799f5")]
 [assembly: System.Reflection.AssemblyProductAttribute("RegisterAddin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RegisterAddin")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

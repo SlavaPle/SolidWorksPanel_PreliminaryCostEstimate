@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lY1AFT4zITo=",
+  "dgSpecHash": "UXQdwzhvXJU=",
   "success": true,
   "projectFilePath": "E:\\Projects\\Solidworks panel\\SolidWorksExportAddin.csproj",
   "expectedPackageFiles": [
@@ -52,10 +52,10 @@
     "C:\\Users\\t0681\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\t0681\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\t0681\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\t0681\\.nuget\\packages\\xarial.xcad\\0.7.5\\xarial.xcad.0.7.5.nupkg.sha512",
-    "C:\\Users\\t0681\\.nuget\\packages\\xarial.xcad.solidworks\\0.7.5\\xarial.xcad.solidworks.0.7.5.nupkg.sha512",
+    "C:\\Users\\t0681\\.nuget\\packages\\xarial.xcad\\0.8.2\\xarial.xcad.0.8.2.nupkg.sha512",
+    "C:\\Users\\t0681\\.nuget\\packages\\xarial.xcad.solidworks\\0.8.2\\xarial.xcad.solidworks.0.8.2.nupkg.sha512",
     "C:\\Users\\t0681\\.nuget\\packages\\xarial.xcad.solidworks.interops\\0.3.0\\xarial.xcad.solidworks.interops.0.3.0.nupkg.sha512",
-    "C:\\Users\\t0681\\.nuget\\packages\\xarial.xcad.toolkit\\0.7.5\\xarial.xcad.toolkit.0.7.5.nupkg.sha512"
+    "C:\\Users\\t0681\\.nuget\\packages\\xarial.xcad.toolkit\\0.8.2\\xarial.xcad.toolkit.0.8.2.nupkg.sha512"
   ],
   "logs": []
 }
