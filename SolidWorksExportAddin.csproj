@@ -1,0 +1,108 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <OutputType>Library</OutputType>
+    <AssemblyName>SolidWorksExportAddin</AssemblyName>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <PlatformTarget>x64</PlatformTarget>
+    <EnableComHosting>false</EnableComHosting>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWPF>true</UseWPF>
+    <EnableXCadRegistration>false</EnableXCadRegistration>
+    <SkipXCadRegistration>true</SkipXCadRegistration>
+    <XCadRegDll>false</XCadRegDll>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xarial.XCad" Version="0.7.5" />
+    <PackageReference Include="Xarial.XCad.SolidWorks" Version="0.7.5" />
+    <PackageReference Include="Xarial.XCad.Toolkit" Version="0.7.5" />
+    <PackageReference Include="Xarial.XCad.SolidWorks.Interops" Version="0.3.0" />
+  </ItemGroup>
+
+  <Target Name="DisableXCadRegistration" BeforeTargets="Build">
+    <PropertyGroup>
+      <EnableXCadRegistration>false</EnableXCadRegistration>
+      <SkipXCadRegistration>true</SkipXCadRegistration>
+    </PropertyGroup>
+  </Target>
+
+  <Target Name="DisableXCadPostBuild" AfterTargets="Build">
+    <PropertyGroup>
+      <EnableXCadRegistration>false</EnableXCadRegistration>
+      <SkipXCadRegistration>true</SkipXCadRegistration>
+    </PropertyGroup>
+  </Target>
+
+  <Target Name="DisableXCadTargets" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <EnableXCadRegistration>false</EnableXCadRegistration>
+      <SkipXCadRegistration>true</SkipXCadRegistration>
+    </PropertyGroup>
+  </Target>
+
+
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="SolidWorks.Interop.sldworks">
+      <HintPath>C:\Program Files\SOLIDWORKS Corp\SOLIDWORKS\api\redist\SolidWorks.Interop.sldworks.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SolidWorks.Interop.swconst">
+      <HintPath>C:\Program Files\SOLIDWORKS Corp\SOLIDWORKS\api\redist\SolidWorks.Interop.swconst.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SolidWorks.Interop.swpublished">
+      <HintPath>C:\Program Files\SOLIDWORKS Corp\SOLIDWORKS\api\redist\SolidWorks.Interop.swpublished.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+
+  <PropertyGroup>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultPageItems>false</EnableDefaultPageItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Core\SwAddin.cs" />
+    <Compile Include="Resources\Resources.cs" />
+    <Compile Include="Views\ExportTaskPaneControl.xaml.cs">
+      <DependentUpon>ExportTaskPaneControl.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Include="Views\ExportTaskPaneControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="register.cmd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="unregister.cmd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <EmbeddedResource Include="Resources\CustomPanel.ico">
+      <LogicalName>SolidWorksExportAddin.Resources.CustomPanel.ico</LogicalName>
+    </EmbeddedResource>
+    <None Include="Resources\*.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>Resources\%(Filename)%(Extension)</Link>
+    </None>
+  </ItemGroup>
+</Project>

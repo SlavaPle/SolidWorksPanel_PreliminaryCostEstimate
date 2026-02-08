@@ -1,0 +1,230 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {
+      "Xarial.XCad/0.7.5": {
+        "type": "package",
+        "compile": {
+          "lib/net461/Xarial.XCad.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Xarial.XCad.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Xarial.XCad.SolidWorks/0.7.5": {
+        "type": "package",
+        "dependencies": {
+          "Xarial.XCad": "0.7.5",
+          "Xarial.XCad.SolidWorks.Interops": "0.3.0",
+          "Xarial.XCad.Toolkit": "0.7.5"
+        },
+        "frameworkAssemblies": [
+          "PresentationCore",
+          "PresentationFramework",
+          "System.Windows.Forms",
+          "WindowsBase",
+          "WindowsFormsIntegration"
+        ],
+        "compile": {
+          "lib/net461/Xarial.XCad.SolidWorks.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Xarial.XCad.SolidWorks.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/Xarial.XCad.SolidWorks.targets": {}
+        }
+      },
+      "Xarial.XCad.SolidWorks.Interops/0.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/SolidWorks.Interop.sldworks.dll": {},
+          "lib/net40/SolidWorks.Interop.swconst.dll": {},
+          "lib/net40/SolidWorks.Interop.swpublished.dll": {}
+        },
+        "runtime": {
+          "lib/net40/SolidWorks.Interop.sldworks.dll": {},
+          "lib/net40/SolidWorks.Interop.swconst.dll": {},
+          "lib/net40/SolidWorks.Interop.swpublished.dll": {}
+        }
+      },
+      "Xarial.XCad.Toolkit/0.7.5": {
+        "type": "package",
+        "dependencies": {
+          "Xarial.XCad": "0.7.5"
+        },
+        "compile": {
+          "lib/net461/Xarial.XCad.Toolkit.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Xarial.XCad.Toolkit.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Xarial.XCad/0.7.5": {
+      "sha512": "zYBjujNTCLd9NyQFvjjvP0mBaDVrxmHz+EYnMfqH3D7A8TWY1AMJ62wYU0tSNwxZ+gVbTYBiM4TfvFlDMA4lCQ==",
+      "type": "package",
+      "path": "xarial.xcad/0.7.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "icon.png",
+        "lib/net461/Xarial.XCad.dll",
+        "lib/net461/Xarial.XCad.xml",
+        "lib/netstandard2.1/Xarial.XCad.dll",
+        "lib/netstandard2.1/Xarial.XCad.xml",
+        "xarial.xcad.0.7.5.nupkg.sha512",
+        "xarial.xcad.nuspec"
+      ]
+    },
+    "Xarial.XCad.SolidWorks/0.7.5": {
+      "sha512": "nQpjVU5/cQSHStd/loUbFOdbxItRF6u/iuvLlSfAlOrKPxXvjN2aY0VfVL6tOVGJSoCHZVNnn0ZvUxeDUKB5kw==",
+      "type": "package",
+      "path": "xarial.xcad.solidworks/0.7.5",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "build/Xarial.XCad.SolidWorks.targets",
+        "icon.png",
+        "lib/net461/Xarial.XCad.SolidWorks.dll",
+        "lib/net461/Xarial.XCad.SolidWorks.xml",
+        "lib/netcoreapp3.1/Xarial.XCad.SolidWorks.dll",
+        "lib/netcoreapp3.1/Xarial.XCad.SolidWorks.xml",
+        "readme.txt",
+        "tools/init.ps1",
+        "xarial.xcad.solidworks.0.7.5.nupkg.sha512",
+        "xarial.xcad.solidworks.nuspec"
+      ]
+    },
+    "Xarial.XCad.SolidWorks.Interops/0.3.0": {
+      "sha512": "ebiAAOHtYpZfjbO4PgdWcmv8+YtoPfAJwUJBeUM2SEBxO1+ru2dYI0XI2Fa1MpmAlsDRuBj6Z3LKtZMtff6NEQ==",
+      "type": "package",
+      "path": "xarial.xcad.solidworks.interops/0.3.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net40/SolidWorks.Interop.sldworks.dll",
+        "lib/net40/SolidWorks.Interop.swconst.dll",
+        "lib/net40/SolidWorks.Interop.swpublished.dll",
+        "tools/init.ps1",
+        "xarial.xcad.solidworks.interops.0.3.0.nupkg.sha512",
+        "xarial.xcad.solidworks.interops.nuspec"
+      ]
+    },
+    "Xarial.XCad.Toolkit/0.7.5": {
+      "sha512": "C3BK8GnpXvm9kcmUgo3/a2zw7JQGl6x0tA0/MvBCv6xipbZr/gSeHoofp3BBOJ7H432Y5H5YiG8P8xv+32Nkqg==",
+      "type": "package",
+      "path": "xarial.xcad.toolkit/0.7.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "icon.png",
+        "lib/net461/Xarial.XCad.Toolkit.dll",
+        "lib/net461/Xarial.XCad.Toolkit.xml",
+        "lib/netstandard2.1/Xarial.XCad.Toolkit.dll",
+        "lib/netstandard2.1/Xarial.XCad.Toolkit.xml",
+        "xarial.xcad.toolkit.0.7.5.nupkg.sha512",
+        "xarial.xcad.toolkit.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": [
+      "Xarial.XCad >= 0.7.5",
+      "Xarial.XCad.SolidWorks >= 0.7.5",
+      "Xarial.XCad.SolidWorks.Interops >= 0.3.0",
+      "Xarial.XCad.Toolkit >= 0.7.5"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\t0681\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\Projects\\Solidworks panel\\SolidWorksExportAddin.csproj",
+      "projectName": "SolidWorksExportAddin",
+      "projectPath": "E:\\Projects\\Solidworks panel\\SolidWorksExportAddin.csproj",
+      "packagesPath": "C:\\Users\\t0681\\.nuget\\packages\\",
+      "outputPath": "E:\\Projects\\Solidworks panel\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\t0681\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net472": {
+        "targetAlias": "net472",
+        "dependencies": {
+          "Xarial.XCad": {
+            "target": "Package",
+            "version": "[0.7.5, )"
+          },
+          "Xarial.XCad.SolidWorks": {
+            "target": "Package",
+            "version": "[0.7.5, )"
+          },
+          "Xarial.XCad.SolidWorks.Interops": {
+            "target": "Package",
+            "version": "[0.3.0, )"
+          },
+          "Xarial.XCad.Toolkit": {
+            "target": "Package",
+            "version": "[0.7.5, )"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\SolidWorks\Addins\{12345678-1234-1234-1234-123456789ABC}]
+@=dword:00000000
+"Description"="SolidWorks Custom Panel add-in"
+"Title"="Custom Panel"
+
+[HKEY_CURRENT_USER\Software\SolidWorks\AddInsStartup\{12345678-1234-1234-1234-123456789ABC}]
+@=dword:00000001

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "42o+lLBL4/k=",
+  "success": true,
+  "projectFilePath": "E:\\Projects\\Solidworks panel\\SolidWorksExportAddin.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\t0681\\.nuget\\packages\\xarial.xcad\\0.7.5\\xarial.xcad.0.7.5.nupkg.sha512",
+    "C:\\Users\\t0681\\.nuget\\packages\\xarial.xcad.solidworks\\0.7.5\\xarial.xcad.solidworks.0.7.5.nupkg.sha512",
+    "C:\\Users\\t0681\\.nuget\\packages\\xarial.xcad.solidworks.interops\\0.3.0\\xarial.xcad.solidworks.interops.0.3.0.nupkg.sha512",
+    "C:\\Users\\t0681\\.nuget\\packages\\xarial.xcad.toolkit\\0.7.5\\xarial.xcad.toolkit.0.7.5.nupkg.sha512"
+  ],
+  "logs": []
+}
