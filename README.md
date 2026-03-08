@@ -1,6 +1,6 @@
-# SolidWorks Custom Panel Add-in
+# SolidWorks Preliminary Cost Estimate Add-in
 
-A SolidWorks add-in that adds a custom task pane (panel) to the SOLIDWORKS application. Built with [Xarial.XCad](https://github.com/xarial/xcad) for SolidWorks, .NET Framework 4.7.2, and WPF.
+A SolidWorks add-in that adds a task pane (Preliminary Cost Estimate panel) to the SOLIDWORKS application. Built with [Xarial.XCad](https://github.com/xarial/xcad) for SolidWorks, .NET Framework 4.7.2, and WPF.
 
 ## Features
 

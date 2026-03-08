@@ -4,7 +4,7 @@ using SolidWorksExportAddin.Resources;
 
 namespace SolidWorksExportAddin
 {
-    [Title("Custom Panel")]
+    [Title("Preliminary Cost Estimate")]
     [Icon(typeof(Res), nameof(Res.TaskPaneIcon))]
     public partial class ExportTaskPaneControl : UserControl
     {

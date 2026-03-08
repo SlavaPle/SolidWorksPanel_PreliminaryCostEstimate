@@ -2,11 +2,11 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("Custom Panel")]
-[assembly: AssemblyDescription("SolidWorks Custom Panel add-in")]
+[assembly: AssemblyTitle("Preliminary Cost Estimate")]
+[assembly: AssemblyDescription("SolidWorks Preliminary Cost Estimate add-in")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Your Company")]
-[assembly: AssemblyProduct("Custom Panel")]
+[assembly: AssemblyProduct("Preliminary Cost Estimate")]
 [assembly: AssemblyCopyright("Copyright © Your Company 2025")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

@@ -6,7 +6,7 @@ using Xarial.XCad.SolidWorks.UI;
 namespace SolidWorksExportAddin
 {
     [ComVisible(true)]
-    [Title("Custom Panel")]
+    [Title("Preliminary Cost Estimate")]
     [Guid("12345678-1234-1234-1234-123456789ABC")]
     public class SwAddin : SwAddInEx
     {
